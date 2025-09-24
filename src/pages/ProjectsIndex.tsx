@@ -1,10 +1,8 @@
-// src/components/portfolio/ProjectsSection.tsx
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Github } from "lucide-react";
 import {
   projects,
-  GITHUB_URL,
   CATEGORY_LABEL,
   type Category,
 } from "@/data/projects";
@@ -96,27 +94,28 @@ export default function ProjectsSection() {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={`View ${project.title} on GitHub`}
+                        title="Open on GitHub"
                       >
                         <Github className="w-4 h-4" />
                         GitHub
                       </a>
                     </Button>
                   )}
-
-                  
                 </div>
               </CardContent>
             </Card>
           ))}
         </div>
 
-      <div className="flex justify-center gap-3 mt-12">
-  <Button variant="outline" size="lg" asChild>
-    <Link to="/projects">View All Projects</Link>
-  </Button>
-</div>
-
-      </div>
+        {/* View all -> internal page */}
+        <div className="text-center mt-12">
+          <Button variant="outline" size="lg" asChild>
+            <Link to="/projects" aria-label="See all projects on my site">
+              View All Projects
+            </Link>
+          </Button>
+        </div>
+      </div> 
     </section>
   );
 }
