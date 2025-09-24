@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Github } from "lucide-react";
 import {
   projects,
-  GITHUB_URL,
+  //GITHUB_URL,
   CATEGORY_LABEL,
   type Category,
 } from "@/data/projects";
@@ -110,11 +110,13 @@ export default function ProjectsSection() {
           ))}
         </div>
 
-      <div className="flex justify-center gap-3 mt-12">
-  <Button variant="outline" size="lg" asChild>
-    <Link to="/projects">View All Projects</Link>
-  </Button>
-</div>
+      <div className="text-center mt-12">
+        <Button variant="outline" size="lg" asChild>
+          <Link to="/projects" aria-label="View all projects">
+            View All Projects
+          </Link>
+        </Button>
+      </div>
 
       </div>
     </section>
