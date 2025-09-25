@@ -101,11 +101,11 @@ export const projects: Project[] = [
     description:
       "A minimal Flask app with sign-up, login/logout, Bootstrap UI, SQLite via SQLAlchemy, and session management with Flask-Login.",
     longDescription: [
-      "+Needed a simple, portfolio-ready scaffold to demonstrate secure authentication and a clean Flask project structure.",
+      "Needed a simple, portfolio-ready scaffold to demonstrate secure authentication and a clean Flask project structure.",
       "Built a lightweight Flask application using blueprints, Flask-Login, and SQLAlchemy, with accessible Bootstrap templates.",
-      "Impact: Provides a clear starting point for adding CRUD features (e.g., notes), deployable to Render/Railway, and easy for reviewers to run locally.",
-      "Maintainability: App factory pattern, isolated blueprints, and a small dependency set make it straightforward to extend or refactor.",
-      "Developer experience: Flash messages, navbar, and sensible defaults speed up iteration; SQLite keeps setup friction near zero."
+      "Provides a clear starting point for adding CRUD features (e.g., notes), deployable to Render/Railway, and easy for reviewers to run locally.",
+      "App factory pattern, isolated blueprints, and a small dependency set make it straightforward to extend or refactor.",
+      "Flash messages, navbar, and sensible defaults speed up iteration; SQLite keeps setup friction near zero."
     ],
     tech: [
       "Python",
