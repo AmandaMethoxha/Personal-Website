@@ -118,7 +118,7 @@ export const projects: Project[] = [
       "Bootstrap 4"
     ],
     githubUrl: "https://github.com/AmandaMethoxha/flask-notes-app",
-    demoUrl: "",           // leave empty for now
+    demoUrl: "/videos/flask-webapp.mp4",
     // image: "/images/flask-app/hero.png",         // optional hero (add file under public/images/flask-app/)
     // imageAlt: "Flask Web App – login screen",
     // screens: [                                    // optional gallery (add when ready)
