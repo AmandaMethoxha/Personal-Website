@@ -142,20 +142,26 @@ export default function ProjectDetails() {
           </div>
         </Card>
 
-        {/* Optional screenshots gallery (kept for other projects) */}
-        {project.screens && project.screens.length > 0 && (
-          <div className="mt-10 grid gap-6 sm:grid-cols-2">
-            {project.screens.map((s) => (
-              <div
-                key={s.src}
-                className="overflow-hidden rounded-lg border border-border bg-card shadow-soft"
-              >
-                <img src={s.src} alt={s.alt} className="w-full h-auto" loading="lazy" />
-                <div className="px-4 py-3 text-sm text-muted-foreground">{s.alt}</div>
-              </div>
-            ))}
-          </div>
-        )}
+        {/* Screenshots gallery */}
+       {project.screens && project.screens.length > 0 && (
+        <div className="mt-10 grid gap-6 sm:grid-cols-2">
+          {project.screens.map((s) => (
+            <figure
+              key={s.src}
+              className="overflow-hidden rounded-lg border border-border bg-card shadow-soft"
+            >
+              <img src={s.src} alt={s.alt} className="w-full h-auto" loading="lazy" />
+              <figcaption className="px-4 py-3 text-sm text-muted-foreground">
+                <div className="font-medium">{s.alt}</div>
+                {s.caption && (
+                  <p className="mt-1 leading-relaxed">{s.caption}</p>
+                )}
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+     )}
+
       </div>
     </section>
   );

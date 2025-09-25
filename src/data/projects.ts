@@ -17,7 +17,7 @@ export type Project = {
   demoUrl?: string;
   image?: string;
   imageAlt?: string;
-  screens?: { src: string; alt: string }[]; 
+  screens?: { src: string; alt: string; caption?: string }[]; 
   featured?: boolean;  
 };
 
@@ -119,12 +119,17 @@ export const projects: Project[] = [
     ],
     githubUrl: "https://github.com/AmandaMethoxha/flask-notes-app",
     demoUrl: "/videos/flask-webapp.mp4",
-    // image: "/images/flask-app/hero.png",         // optional hero (add file under public/images/flask-app/)
-    // imageAlt: "Flask Web App – login screen",
-    // screens: [                                    // optional gallery (add when ready)
-    //   { src: "/images/flask-app/01.png", alt: "Login" },
-    //   { src: "/images/flask-app/02.png", alt: "Navbar & flash messages" }
-    // ]
+
+    screens: [                                   
+       { src: "/images/flask/login-page.png", alt: "Login Page", 
+          caption:
+            "The login page checks your email and password and signs you in securely; if anything’s off, it shows a clear error"
+        },
+       { src: "/images/flask/signup-page.png", alt: "Sign Up page",
+          caption:
+            "The sign-up page creates a new account with basic validation and logs you in straight away when it’s successful."
+        }
+     ]
 }
 
 
