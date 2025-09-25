@@ -1,4 +1,3 @@
-// src/data/projects.ts
 export type Category = "software" | "electronics" | "full-stack";
 
 export const CATEGORY_LABEL: Record<Category, string> = {
@@ -18,7 +17,8 @@ export type Project = {
   demoUrl?: string;
   image?: string;
   imageAlt?: string;
-  screens?: { src: string; alt: string }[]; // <-- add this
+  screens?: { src: string; alt: string }[]; 
+  featured?: boolean;  
 };
 
 export const GITHUB_USERNAME = "AmandaMethoxha";
@@ -33,6 +33,7 @@ export const projects: Project[] = [
   {
     slug: "intelligent-hardware-controller",
     title: "Intelligent Hardware Controller",
+    featured: true,
     category: "electronics",
     description:
       "A microcontroller-based system for real-time sensor data processing with ML integration.",
@@ -48,6 +49,7 @@ export const projects: Project[] = [
   {
     slug: "interactive-portfolio",
     title: "Interactive Portfolio",
+    featured: true,
     category: "software",
     description:
       "Responsive one-page portfolio with animated headings, hover effects, and timed role swapping.",
@@ -67,6 +69,7 @@ export const projects: Project[] = [
       
     slug: "student-information-system",
     title: "Student Information System",
+    featured: true,
     category: "full-stack",
     description:
       "Cross-platform SIS built with .NET MAUI (.NET 7, C#) and SQLite for staff/student management, grades, and real-time updates.",
@@ -88,6 +91,43 @@ export const projects: Project[] = [
       { src: "/images/sis/04-register-student.png", alt: "Register new student" },
       { src: "/images/sis/05-students-list.png", alt: "List of registered students" }
     ]
-  }
+  },
+
+  {
+    slug: "flask-user-auth-notes",
+    title: "Flask Web App",
+    featured: false,
+    category: "full-stack", // ← keep lowercase to satisfy the Category type
+    description:
+      "A minimal Flask app with sign-up, login/logout, Bootstrap UI, SQLite via SQLAlchemy, and session management with Flask-Login.",
+    longDescription: [
+      "+Needed a simple, portfolio-ready scaffold to demonstrate secure authentication and a clean Flask project structure.",
+      "Built a lightweight Flask application using blueprints, Flask-Login, and SQLAlchemy, with accessible Bootstrap templates.",
+      "Impact: Provides a clear starting point for adding CRUD features (e.g., notes), deployable to Render/Railway, and easy for reviewers to run locally.",
+      "Maintainability: App factory pattern, isolated blueprints, and a small dependency set make it straightforward to extend or refactor.",
+      "Developer experience: Flash messages, navbar, and sensible defaults speed up iteration; SQLite keeps setup friction near zero."
+    ],
+    tech: [
+      "Python",
+      "Flask",
+      "Jinja2",
+      "Flask-Login",
+      "Flask-SQLAlchemy",
+      "SQLAlchemy",
+      "SQLite",
+      "Bootstrap 4"
+    ],
+    githubUrl: "https://github.com/AmandaMethoxha/flask-notes-app",
+    demoUrl: "",           // leave empty for now
+    // image: "/images/flask-app/hero.png",         // optional hero (add file under public/images/flask-app/)
+    // imageAlt: "Flask Web App – login screen",
+    // screens: [                                    // optional gallery (add when ready)
+    //   { src: "/images/flask-app/01.png", alt: "Login" },
+    //   { src: "/images/flask-app/02.png", alt: "Navbar & flash messages" }
+    // ]
+}
+
+
+
 
 ];

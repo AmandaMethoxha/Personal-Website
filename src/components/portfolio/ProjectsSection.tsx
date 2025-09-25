@@ -17,6 +17,7 @@ const categoryStyles: Record<Category, string> = {
 };
 
 export default function ProjectsSection() {
+  const featured = projects.filter(p => p.featured === true); // only show featured
   return (
     <section id="projects" className="py-20 bg-background">
       <div className="container mx-auto px-6">
@@ -28,7 +29,7 @@ export default function ProjectsSection() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project) => (
+          {featured.map((project) => (
             <Card
               key={project.slug}
               className="bg-gradient-card shadow-soft hover:shadow-hover transition-smooth group"
