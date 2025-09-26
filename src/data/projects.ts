@@ -97,7 +97,7 @@ export const projects: Project[] = [
     slug: "flask-user-auth-notes",
     title: "Flask Web App",
     featured: false,
-    category: "full-stack", // ← keep lowercase to satisfy the Category type
+    category: "full-stack", 
     description:
       "A minimal Flask app with sign-up, login/logout, Bootstrap UI, SQLite via SQLAlchemy, and session management with Flask-Login.",
     longDescription: [
