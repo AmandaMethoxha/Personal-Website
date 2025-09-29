@@ -19,6 +19,7 @@ export type Project = {
   imageAlt?: string;
   screens?: { src: string; alt: string; caption?: string }[]; 
   featured?: boolean;  
+  sampleRun?: string;     // multi-line code block content
 };
 
 export const GITHUB_USERNAME = "AmandaMethoxha";
@@ -135,19 +136,30 @@ export const projects: Project[] = [
 {
   slug: "python-mini-projects",
   title: "Python Mini Projects",
-  featured: false,                // not shown on Featured, only on /projects
+  featured: false,
   category: "software",
   description:
-    "A tidy collection of small Python console apps—timed quiz, MadLibs, number guesser, Pig Game, and a simple quiz.",
+    "A tidy set of console mini-apps (quiz, madlib, number guesser, pig game, hardware quiz). Pure Python 3, zero heavy setup.",
   longDescription: [
-    "Each mini app lives under /projects/<name> with its own README and run instructions. Everything runs locally with Python 3 and needs no complex setup.",
-    "Focus areas: clean CLI UX, input validation, tiny configs, and quick wins that mirror interview-style exercises.",
-    "Highlights: timed arithmetic quiz, MadLib generator from a story template, number guessing with attempt counter, Pig Game for 2–4 players, and a short quiz on computer parts.",
-    "Repo structure example: /projects/math-quiz, /projects/madlib-generator, /projects/number-guesser, /projects/pig-game, /projects/quiz-game."
+    "Self-contained console minis under /projects/<name>—each with a README and simple run steps. Python 3, no complex setup.",
+    "Emphasis on clean CLI UX, robust input checks, tiny configs, and interview-style practice.",
+    "Includes Math Quiz, MadLib Generator, Number Guesser, Pig Game (2–4 players), and a short Hardware Quiz.",
+    "Structure: /projects/math-quiz, /projects/madlib-generator, /projects/number-guesser, /projects/pig-game, /projects/quiz-game."
   ],
-  tech: ["Python 3", "argparse / input()", "random", "time", "basic file I/O"],
-  githubUrl: "https://github.com/AmandaMethoxha/Python-mini-projects"
+  tech: ["Python 3", "Stdlib", "CLI UX", "Type hints"],
+  githubUrl: "https://github.com/AmandaMethoxha/Python-Mini-projects/tree/main/projects",
+
+  sampleRun:
+`$ cd projects/math-quiz
+$ python3 math_quiz.py
+press enter to start!
+Problem #1: 7 * 12 = 84
+Correct!
+Problem #2: 15 - 6 = 9
+Nice work! You finished in 46.0 seconds.`,
+  
 }
+
 
 
 
