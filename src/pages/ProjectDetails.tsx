@@ -89,6 +89,50 @@ export default function ProjectDetails() {
             ))}
           </div>
 
+          {/* Minis list for the Python Mini Projects page */}
+{project.slug === "python-mini-projects" && (
+  <div className="mt-8 space-y-4">
+    <h2 className="text-xl font-semibold">Included mini projects</h2>
+    <ul className="list-disc pl-6 space-y-3">
+      <li>
+        <strong>Math Quiz</strong> — timed +/−/* questions; blocks until correct; tracks total time & wrong attempts.
+        <div className="text-sm text-muted-foreground mt-1">
+          Run: <code>python3 projects/math-quiz/math_quiz.py</code><br/>
+          Configure in <code>math_quiz.py</code>: <code>MIN_OPERAND</code>, <code>MAX_OPERAND</code>, <code>TOTAL_PROBLEMS</code>
+        </div>
+      </li>
+      <li>
+        <strong>MadLib Generator</strong> — fills placeholders (e.g. &lt;adjective&gt;, &lt;location&gt;) from <code>story.txt</code>.
+        <div className="text-sm text-muted-foreground mt-1">
+          Run: <code>python3 projects/madlib-generator/madlib_generator.py</code><br/>
+          Place <code>story.txt</code> in the same folder.
+        </div>
+      </li>
+      <li>
+        <strong>Number Guesser</strong> — guess 1–100; “Too high/low”; validates input; offers replay.
+        <div className="text-sm text-muted-foreground mt-1">
+          Run: <code>python3 projects/number-guesser/number_guesser.py</code>
+        </div>
+      </li>
+      <li>
+        <strong>Pig Game</strong> — 2–4 player dice; roll to build turn score; 1 ends your turn; first to 50 wins.
+        <div className="text-sm text-muted-foreground mt-1">
+          Run: <code>python3 projects/pig-game/pig_game.py</code><br/>
+          Rules: <em>y</em> to roll, anything else to hold.
+        </div>
+      </li>
+      <li>
+        <strong>Quiz Game</strong> — quick terminal quiz on computer parts (CPU, GPU, RAM, PSU).
+        <div className="text-sm text-muted-foreground mt-1">
+          Run: <code>python3 projects/quiz-game/quiz_game.py</code><br/>
+          Answers are case-insensitive; PSU accepts “Power Supply Unit”.
+        </div>
+      </li>
+    </ul>
+  </div>
+)}
+
+
           {/* Tech stack pills */}
           <div className="flex flex-wrap gap-2 mt-6">
             {project.tech.map((t) => (

@@ -130,7 +130,25 @@ export const projects: Project[] = [
             "The sign-up page creates a new account with basic validation and logs you in straight away when it’s successful."
         }
      ]
+},
+
+{
+  slug: "python-mini-projects",
+  title: "Python Mini Projects",
+  featured: false,                // not shown on Featured, only on /projects
+  category: "software",
+  description:
+    "A tidy collection of small Python console apps—timed quiz, MadLibs, number guesser, Pig Game, and a simple quiz.",
+  longDescription: [
+    "Each mini app lives under /projects/<name> with its own README and run instructions. Everything runs locally with Python 3 and needs no complex setup.",
+    "Focus areas: clean CLI UX, input validation, tiny configs, and quick wins that mirror interview-style exercises.",
+    "Highlights: timed arithmetic quiz, MadLib generator from a story template, number guessing with attempt counter, Pig Game for 2–4 players, and a short quiz on computer parts.",
+    "Repo structure example: /projects/math-quiz, /projects/madlib-generator, /projects/number-guesser, /projects/pig-game, /projects/quiz-game."
+  ],
+  tech: ["Python 3", "argparse / input()", "random", "time", "basic file I/O"],
+  githubUrl: "https://github.com/AmandaMethoxha/Python-mini-projects"
 }
+
 
 
 
