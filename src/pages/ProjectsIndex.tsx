@@ -93,7 +93,7 @@ export default function ProjectsIndex() {
 
                 <div className="flex gap-2">
                   <Button variant="accent" className="flex-1" asChild>
-                    <Link to={`/projects/${project.slug}`} aria-label={`Read more about ${project.title}`}>
+                    <Link to={`/projects/${project.slug}`} state={{ from: "all-projects" }} aria-label={`Read more about ${project.title}`}>
                       Details
                     </Link>
                   </Button>
