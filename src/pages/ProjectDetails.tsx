@@ -146,23 +146,6 @@ export default function ProjectDetails() {
           </div>
 
 
-
-{project.features && project.features.length > 0 && (
-  <div className="mt-8">
-    <h3 className="text-lg font-semibold mb-3">Key Features</h3>
-    <div className="flex flex-wrap gap-2">
-      {project.features.map((f) => (
-        <span
-          key={f}
-          className="px-2 py-1 rounded bg-muted text-muted-foreground text-sm"
-        >
-          {f}
-        </span>
-      ))}
-    </div>
-  </div>
-)}
-
 {project.sampleRun && (
   <div className="mt-8">
     <h3 className="text-lg font-semibold mb-3">Sample Run</h3>
@@ -172,16 +155,6 @@ export default function ProjectDetails() {
   </div>
 )}
 
-{project.nextSteps && project.nextSteps.length > 0 && (
-  <div className="mt-8">
-    <h3 className="text-lg font-semibold mb-3">Next Steps</h3>
-    <ul className="list-disc pl-5 space-y-1 text-foreground/90">
-      {project.nextSteps.map((n) => (
-        <li key={n}>{n}</li>
-      ))}
-    </ul>
-  </div>
-)}
 
           {/* Links */}
           <div className="flex flex-wrap gap-3 mt-8">
