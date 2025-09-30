@@ -34,7 +34,7 @@ export const projects: Project[] = [
   {
     slug: "intelligent-hardware-controller",
     title: "Intelligent Hardware Controller",
-    featured: true,
+    featured: false,
     category: "electronics",
     description:
       "A microcontroller-based system for real-time sensor data processing with ML integration.",
@@ -158,7 +158,34 @@ Correct!
 Problem #2: 15 - 6 = 9
 Nice work! You finished in 46.0 seconds.`,
   
+},
+
+{
+  slug: "raspberry-pi-traffic-lights",
+  title: "Raspberry Pi Traffic Lights",
+  featured: true,                 // shows only on “All Projects”
+  category: "electronics",
+  description:
+    "Finite-state traffic lights on a Raspberry Pi with a pedestrian button. Debounced input, safe GPIO, and a clean demo.",
+  longDescription: [
+    "Built a working traffic-light controller on a Raspberry Pi using Python and gpiozero. It runs a timed Red → Red+Amber → Green → Amber cycle and reacts to a pedestrian button by shortening green and safely extending red.",
+    "Demonstrates a simple state machine, debounced inputs, and safe GPIO practices (series resistors, pull-ups).",
+    "Designed to be easy to extend: add a WALK LED/buzzer, move timings into a config file, or expose controls via a small web UI.",
+  ],
+  tech: ["Raspberry Pi", "Python", "gpiozero", "Breadboard", "LEDs"],
+  githubUrl: "https://github.com/AmandaMethoxha/raspi-traffic-lights",
+  demoUrl: "/videos/traffic-lights-demo.mp4",   // your local MP4
+  image: "/images/traffic-lights/wiring-hero.png",
+  imageAlt: "Raspberry Pi traffic lights wiring on breadboard",
+  screens: [
+    { src: "/images/traffic-lights/wiring-hero.png", alt: "Wiring close-up", caption: "GPIO to resistors to LEDs; button on GPIO23 with internal pull-up." },
+    { src: "/images/traffic-lights/state-diagram.png", alt: "State diagram", caption: "Finite-state sequence with pedestrian request shortening green." },
+    { src: "/images/traffic-lights/build-1.png", alt: "Build photo 1", caption: "Breadboard layout with red/amber/green channels." },
+    { src: "/images/traffic-lights/build-2.png", alt: "Build photo 2", caption: "Side view of wiring and resistors (220 Ω)." }
+    
+  ]
 }
+
 
 
 
