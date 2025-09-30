@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, useLocation} from "react-router-dom";
 import { useEffect } from "react";
 import { projects, CATEGORY_LABEL } from "@/data/projects";
 import { Button } from "@/components/ui/button";
@@ -7,6 +7,9 @@ import { Github, ExternalLink, ArrowLeft } from "lucide-react";
 
 export default function ProjectDetails() {
   const { slug } = useParams<{ slug: string }>();
+  const location = useLocation();
+  const fromAllProjects = (location.state as { from?: string } | null)?.from === "all-projects";
+
   const project = projects.find((p) => p.slug === slug);
 
   // scroll to top on project change
@@ -35,15 +38,17 @@ export default function ProjectDetails() {
   }
 
   const isLocalMp4 = !!project.demoUrl && project.demoUrl.endsWith(".mp4");
+  const backHref = fromAllProjects ? "/projects" : "/#projects"; // ← decide target
+
 
   return (
     <section className="min-h-screen bg-gradient-subtle">
       <div className="container mx-auto px-6 py-12 max-w-4xl">
         {/* Back to the projects section on the homepage */}
         <Button asChild variant="ghost" className="mb-6">
-          <a href="/#projects" aria-label="Back to projects">
+             <a href={backHref} aria-label={fromAllProjects ? "Back to All Projects" : "Back to Featured Projects"}>
             <ArrowLeft className="w-4 h-4" />
-            Back to Projects
+            {fromAllProjects ? "Back to All Projects" : "Back to Featured"}
           </a>
         </Button>
 
