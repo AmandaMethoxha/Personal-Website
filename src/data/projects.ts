@@ -163,7 +163,7 @@ Nice work! You finished in 46.0 seconds.`,
 {
   slug: "raspberry-pi-traffic-lights",
   title: "Raspberry Pi Traffic Lights",
-  featured: true,                 // shows only on “All Projects”
+  featured: true,                
   category: "electronics",
   description:
     "Finite-state traffic lights on a Raspberry Pi with a pedestrian button. Debounced input, safe GPIO, and a clean demo.",
@@ -174,7 +174,7 @@ Nice work! You finished in 46.0 seconds.`,
   ],
   tech: ["Raspberry Pi", "Python", "gpiozero", "Breadboard", "LEDs"],
   githubUrl: "https://github.com/AmandaMethoxha/raspi-traffic-lights",
-  demoUrl: "/videos/traffic-lights-demo.mp4",   // your local MP4
+  demoUrl: "/videos/traffic-lights-demo.mp4",  
   image: "/images/traffic-lights/wiring-hero.png",
   imageAlt: "Raspberry Pi traffic lights wiring on breadboard",
   screens: [
