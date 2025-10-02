@@ -166,7 +166,7 @@ Nice work! You finished in 46.0 seconds.`,
   featured: true,                
   category: "electronics",
   description:
-    "Finite-state traffic lights on a Raspberry Pi with a pedestrian button. Debounced input, safe GPIO, and a clean demo.",
+    "Traffic lights on a Raspberry Pi with a pedestrian button. Debounced input, safe GPIO, and a clean demo.",
   longDescription: [
     "Built a working traffic-light controller on a Raspberry Pi using Python and gpiozero. It runs a timed Red → Red+Amber → Green → Amber cycle and reacts to a pedestrian button by shortening green and safely extending red.",
     "Demonstrates a simple state machine, debounced inputs, and safe GPIO practices (series resistors, pull-ups).",
