@@ -62,7 +62,7 @@ export const projects: Project[] = [
     ],
     tech: ["HTML", "CSS", "JavaScript"],
     githubUrl: "https://github.com/AmandaMethoxha/student-information-system",
-    demoUrl: "/videos/interactive-portfolio.mp4"   // <-- LOCAL MP4
+    demoUrl: "/videos/interactive-portfolio.mp4"   
   },
 
 
