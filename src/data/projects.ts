@@ -19,7 +19,7 @@ export type Project = {
   imageAlt?: string;
   screens?: { src: string; alt: string; caption?: string }[]; 
   featured?: boolean;  
-  sampleRun?: string;     // multi-line code block content
+  sampleRun?: string;     
 };
 
 export const GITHUB_USERNAME = "AmandaMethoxha";
