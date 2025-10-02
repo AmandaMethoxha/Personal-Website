@@ -76,8 +76,7 @@ export default function ProjectDetails() {
               className="w-full rounded-xl shadow-soft"
               controls
               preload="metadata"
-              // If you add a thumbnail later, uncomment:
-              // poster="/images/thumbnails/interactive-portfolio.jpg"
+              
             >
               <source src={project.demoUrl} type="video/mp4" />
               Your browser does not support the video tag.
