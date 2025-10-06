@@ -5,9 +5,10 @@ import heroImage from "@/assets/Amanda.png";
 const HeroSection = () => {
   return (
     <section
-      id="about" className="min-h-screen bg-gradient-subtle flex items-center justify-center px-6 pt-20 scroll-mt-28" >
-    <section className="min-h-screen bg-gradient-subtle flex items-center justify-center px-6 pt-20">
-      <div className="container mx-auto">
+      id="about"
+      className="min-h-screen bg-gradient-subtle flex items-center justify-center px-6 pt-4 scroll-mt-24" 
+    >
+      <div className="container mx-auto py-10 lg:py-16">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           {/* Text */}
           <div className="space-y-8">
@@ -136,7 +137,7 @@ const HeroSection = () => {
         </div>
       </div>
     </section>
-    </section>
+    
   );
 };
 
