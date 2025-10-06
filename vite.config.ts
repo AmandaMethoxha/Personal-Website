@@ -1,18 +1,16 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
-import path from "path";
+import { fileURLToPath } from "node:url";
+import { dirname, resolve } from "node:path";
 
-// https://vitejs.dev/config/
+const __dirname = dirname(fileURLToPath(import.meta.url));
+
 export default defineConfig({
-  server: {
-    host: "::",
-    port: 8080,
-  },
+  server: { host: "::", port: 8080 }, // dev only; Vercel ignores this
   plugins: [react()],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      "@": resolve(__dirname, "src"),
     },
   },
 });
-
