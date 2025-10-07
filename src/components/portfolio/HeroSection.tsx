@@ -25,7 +25,7 @@ const HeroSection = () => {
               </div>
 
               <h1 className="text-hero font-bold text-foreground leading-tight">
-                👋 Hi, I'm Amanda Methoxha
+                👋 Hi, I'm Amanda Methoxha Shpendi
               </h1>
 
               <p className="text-subheading text-muted-foreground leading-relaxed">
