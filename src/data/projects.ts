@@ -204,17 +204,17 @@ Nice work! You finished in 46.0 seconds.`,
   // demoUrl: "/videos/care-roster-demo.mp4", // add when you have the video
   screens: [
     {
-      src: "/images/care_roster/streamlit-dashboard.png",
+      src: "/images/care-roster/streamlit-dashboard.png",
       alt: "Streamlit dashboard – create regular availability",
       caption: "Create weekly availability for a staff member and review current records."
     },
     {
-      src: "/images/care_roster/pgadmin-tables.png",
+      src: "/images/care-roster/pgadmin-tables.png",
       alt: "pgAdmin – PostgreSQL schema & sample data",
       caption: "Normalized tables for staff, service users, availability, needs, and assignments."
     },
     {
-      src: "/images/care_roster/fastapi-swagger.png",
+      src: "/images/care-roster/fastapi-swagger.png",
       alt: "FastAPI Swagger UI – endpoints and responses",
       caption: "Interactive API docs showing CRUD routes and example JSON responses."
     }
