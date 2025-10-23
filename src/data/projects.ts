@@ -201,7 +201,7 @@ Nice work! You finished in 46.0 seconds.`,
   ],
   tech: ["FastAPI", "Streamlit", "PostgreSQL", "Docker", "Python", "Pandas"],
   githubUrl: "https://github.com/AmandaMethoxha/care-rostering-system", 
-  // demoUrl: "/videos/care-roster-demo.mp4", // add when you have the video
+  // demoUrl: "/videos/care-roster-demo.mp4", // add when you have the video, this is under developement
   screens: [
     {
       src: "/images/care-roster/streamlit-dashboard.png",
