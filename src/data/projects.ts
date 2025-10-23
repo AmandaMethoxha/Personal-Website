@@ -184,6 +184,41 @@ Nice work! You finished in 46.0 seconds.`,
     { src: "/images/traffic-lights/build-2.png", alt: "Build photo 2", caption: "Side view of wiring and resistors (220 Ω)." }
     
   ]
+},
+
+{
+  slug: "care-rostering-system",
+  title: "Care Rostering System",
+  featured: false,                 
+  category: "full-stack",
+  description:
+    "Scheduling platform for adult social care using FastAPI, Streamlit, and PostgreSQL (Docker). Manage staff, service users, availability & assignments.",
+  longDescription: [
+    "Lightweight rostering platform: PostgreSQL schema, FastAPI REST API, and a Streamlit dashboard for managers.",
+    "Manage staff/service-user records, weekly availability, and assignments; log care needs (medical, wellbeing, domestic).",
+    "Dockerized stack for one-command local setup; pgAdmin included for database inspection.",
+    "Foundation for next steps: calendar view, role-based auth, and ML-assisted rostering."
+  ],
+  tech: ["FastAPI", "Streamlit", "PostgreSQL", "Docker", "Python", "Pandas"],
+  githubUrl: "https://github.com/AmandaMethoxha/care-rostering-system", 
+  // demoUrl: "/videos/care-roster-demo.mp4", // add when you have the video
+  screens: [
+    {
+      src: "/images/care_roster/streamlit-dashboard.png",
+      alt: "Streamlit dashboard – create regular availability",
+      caption: "Create weekly availability for a staff member and review current records."
+    },
+    {
+      src: "/images/care_roster/pgadmin-tables.png",
+      alt: "pgAdmin – PostgreSQL schema & sample data",
+      caption: "Normalized tables for staff, service users, availability, needs, and assignments."
+    },
+    {
+      src: "/images/care_roster/fastapi-swagger.png",
+      alt: "FastAPI Swagger UI – endpoints and responses",
+      caption: "Interactive API docs showing CRUD routes and example JSON responses."
+    }
+  ]
 }
 
 

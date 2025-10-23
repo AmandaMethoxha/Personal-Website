@@ -83,7 +83,7 @@ const HeroSection = () => {
               {/* LinkedIn button */}
               <Button variant="accent" size="lg" className="gap-2" asChild>
                 <a
-                  href="https://www.linkedin.com/in/amanda-methoxha-463531160/"
+                  href="https://www.linkedin.com/in/amanda-shpendi-463531160/"
                   target="_blank"
                   rel="noreferrer noopener"
                   aria-label="Open my LinkedIn profile"
@@ -111,7 +111,7 @@ const HeroSection = () => {
               />
               <img
                 src={heroImage}
-                alt="Portrait of Amanda Methoxha"
+                alt="Portrait of Amanda Shpendi"
                 className="relative w-80 h-80 md:w-88 md:h-88 lg:w-[26rem] lg:h-[26rem] rounded-full object-cover shadow-hover border-[6px] border-background"
                 loading="eager"
                 width={384}

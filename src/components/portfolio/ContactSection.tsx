@@ -29,9 +29,9 @@ const ContactSection = () => {
               <Button variant="outline" className="w-full">
                     <a
                       href="mailto:amandamethoxha30@gmail.com?subject=Hello%20Amanda%20—%20from%20your%20portfolio"
-                      aria-label="Email Amanda at amandamethoxha30@gmail.com"
+                      aria-label="Email Amanda at amandashpendi@gmail.com"
                     >
-                      amandamethoxha30@gmail.com
+                      amandashpendi@gmail.com
                     </a>
               </Button>
             </CardContent>
@@ -51,7 +51,7 @@ const ContactSection = () => {
             <CardContent>
               <Button variant="accent" className="w-full" asChild>
                 <a
-                  href="https://www.linkedin.com/in/amanda-methoxha-463531160/"
+                  href="https://www.linkedin.com/in/amanda-shpendi-463531160/"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Open my LinkedIn profile">
