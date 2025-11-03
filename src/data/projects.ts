@@ -31,21 +31,21 @@ export const GITHUB_URL = `https://github.com/AmandaMethoxha`;
 const SIS_REPO = `https://github.com/AmandaMethoxha/student-information-system`;
 
 export const projects: Project[] = [
-  {
-    slug: "intelligent-hardware-controller",
-    title: "Intelligent Hardware Controller",
-    featured: false,
-    category: "electronics",
-    description:
-      "A microcontroller-based system for real-time sensor data processing with ML integration.",
-    longDescription: [
-      "Built a microcontroller system that ingests multi-sensor data and runs lightweight inference with TensorFlow Lite.",
-      "Designed latency-sensitive firmware loops and a serial diagnostics dashboard.",
-      "Outcome: lower response time and stable inference on constrained hardware.",
-    ],
-    tech: ["C++", "Python", "Arduino", "TensorFlow Lite"],
-    githubUrl: SIS_REPO,
-  },
+ // {
+   // slug: "intelligent-hardware-controller",
+    //title: "Intelligent Hardware Controller",
+    //featured: false,
+    //category: "electronics",
+    //description:
+      //"A microcontroller-based system for real-time sensor data processing with ML integration.",
+    //longDescription: [
+    //  "Built a microcontroller system that ingests multi-sensor data and runs lightweight inference with TensorFlow Lite.",
+     // "Designed latency-sensitive firmware loops and a serial diagnostics dashboard.",
+    //  "Outcome: lower response time and stable inference on constrained hardware.",
+    //],
+   // tech: ["C++", "Python", "Arduino", "TensorFlow Lite"],
+   // githubUrl: SIS_REPO,
+  //},
 
   {
     slug: "interactive-portfolio",
@@ -61,7 +61,7 @@ export const projects: Project[] = [
       "Lightweight static site—easy to deploy on GitHub Pages or Netlify."
     ],
     tech: ["HTML", "CSS", "JavaScript"],
-    githubUrl: "https://github.com/AmandaMethoxha/student-information-system",
+    githubUrl: "https://github.com/AmandaMethoxha/Amanda_Portofolio-site",
     demoUrl: "/videos/interactive-portfolio.mp4"   
   },
 
