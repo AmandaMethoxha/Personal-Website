@@ -1,6 +1,6 @@
 # Amanda Methoxha — Portfolio
 
-A fast, minimal portfolio built with **React + Vite + TypeScrip**, **Tailwind CSS**, and **shadcn/ui**.  
+A fast, minimal portfolio built with **React + Vite + TypeScript**, **Tailwind CSS**, and **shadcn/ui**.  
 It showcases featured projects on the home page and a full, scrollable list at **/projects**, with per-project detail pages at **/projects/:slug**.
 
 ## ✨ Features
